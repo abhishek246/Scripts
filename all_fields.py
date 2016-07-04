@@ -5,7 +5,7 @@
    Constraint: Fetchs fields only till depth of 2.
 '''
 __author__ = 'Abhishek K'
-__credits__ = ['Farhan Ali', 'Jaydeep']
+__credits__ = ['Farhan Ali', 'Jayadeep Sasikumar']
 
 from django.db.models.fields.related import ForeignKey, ManyToOneRel, OneToOneRel, ManyToManyRel
 
@@ -41,5 +41,5 @@ def data(base_model, depth=0):
                 column_names.append(str(column_name))
         return list(set(column_names))
     except Exception, e:
-        error_log(e)
+        print e
 
