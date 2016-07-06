@@ -1,4 +1,6 @@
 '''
 Fetch Branch from Origin..
 '''
-#git branch brnach_name origin/branch_name
+#git branch branch_name origin/branch_name
+#or
+#git branch -b  branch_name origin/branch_name
